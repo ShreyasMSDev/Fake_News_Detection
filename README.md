@@ -59,7 +59,7 @@ Performance is measured using:
 | Model               | Accuracy | Precision | Recall | F1-Score |
 | ------------------- | -------- | --------- | ------ | -------- |
 | Logistic Regression | 0.9013   | 0.8911    | 0.9033 | 0.8972   |
-| Decision Tree       | 0.8851   | 0.8724    | 0.8972 | 0.8846   |
+| Decision Tree       | 0.8226   | 0.8269    | 0.7942 | 0.8103   |
 | Random Forest       | 0.9057   | 0.9048    | 0.8967 | 0.9007   |
 
 **Note:** Random Forest delivered the best performance with an F1-score of **0.9007**, balancing both precision and recall effectively.
