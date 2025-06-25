@@ -68,8 +68,16 @@ Performance is measured using:
 
 ## Conclusion
 
-This project successfully demonstrates that **semantic-aware classification** can outperform traditional syntactic methods in detecting fake news. By using **noun-focused lemmatization** and **Word2Vec embeddings**, the model captures the deeper context of the news articles.
+This project successfully demonstrates that **semantic-aware classification** can outperform traditional syntactic methods in detecting fake news.
 
-Among the three models tested, **Random Forest** emerged as the top performer, achieving **90.6% accuracy** and an **F1-score of 0.901**. This shows the potential of combining **POS-tagged lemmatization** and **distributed word representations** in real-world NLP pipelines.
+Our **semantic classification pipeline** – built on **rigorous preprocessing**, **targeted lemmatization**, **Word2Vec-based vectorization**, and **ensemble learning** — has proven effective in **distinguishing between true and fake news**. By focusing on **extracting** and **embedding lemmatized nouns** (which capture the **core semantic units** of each article), we were able to train **robust classifiers** that can discern the **subtle linguistic patterns** in news content.
+
+Among the three classifiers evaluated – **Logistic Regression**, **Decision Tree**, and **Random Forest** – the **Random Forest** model emerged as the **top performer**, achieving **90.6% accuracy** and an **F1-score of 0.901** on the validation set. This slightly outperformed **Logistic Regression** (**90.1% accuracy**, **F1 = 0.897**) and significantly surpassed **Decision Tree**. We chose **F1-score** as the **principal evaluation metric**, as it balances **precision** (minimizing **false positives**, i.e., misclassifying fake news as true) and **recall** (ensuring that true news is correctly identified) – both of which are **critical in real-world misinformation detection**.
+
+Beyond the metrics, our pipeline reflects a clear **linguistic distinction**: **True news** articles typically contain **formal**, **policy-related terms** like **"government"**, **"administration"**, and **"legislation"**, whereas **fake news** tends to rely on **emotionally charged**, **media-focused** words like **"image"**, **"video"**, and **"supporter"**. This reinforces the notion that **fake news** often prioritizes **visual** and **sensational elements**, while **true news** leans towards **factual**, **governance-related language**.
+
+In conclusion, our approach demonstrates that **semantic classification**, grounded in **noun-focused lemmatization** and **distributed embeddings**, is both **accurate** and **scalable**. While the current model performs well, its performance could be further enhanced by integrating **contextual embeddings** such as **BERT**, or using **hybrid models** that combine **traditional vectorizers** (**TF-IDF**, **Word2Vec**) with **deep learning**. As **misinformation** continues to evolve in form and spread, this pipeline offers a **practical**, **interpretable**, and **extensible framework** to strengthen **automated fake news detection systems**.
+
+
 
 
